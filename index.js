@@ -4,8 +4,12 @@ var lats = ['lat', 'latitude'];
 var lngs = ['lng', 'long', 'longitude'];
 
 module.exports = function(latlng, tolerance) {
+  var result;
+
   if (Array.isArray(latlng)) {
-    return latlng.concat(latlng);
+    result = latlng.concat(addTolerance(latlng, tolerance));
+
+    return result;
   }
   
   var keys = Object.keys(latlng);
@@ -14,7 +18,8 @@ module.exports = function(latlng, tolerance) {
 
   if (latKey && lngKey) {
     var arr = toArray(latlng, latKey, lngKey);
-    return arr.concat(arr);
+    result = arr.concat(addTolerance(arr, tolerance));
+    return result;
   }
 };
 
@@ -28,4 +33,24 @@ function keyExists(keys, possibleKeys) {
 
 function toArray(latlng, latKey, lngKey) {
   return [latlng[latKey], latlng[lngKey]];
+}
+
+function addTolerance(arr, tolerance) {
+  var result = [];
+
+  if (!isNaN(tolerance)) {
+    result[0] = arr[0] + tolerance;
+    result[1] = arr[1] + tolerance;
+  }
+  else {
+    result = clone(arr);
+  }
+
+  return result;
+}
+
+function clone(arr) {
+  return arr.map(function(i) {
+    return i;
+  });
 }

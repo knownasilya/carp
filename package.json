@@ -4,7 +4,8 @@
   "description": "lat/lng to bbox with a tolerance",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "debug": "node --debug-brk=5959 test/index.js"
   },
   "repository": {
     "type": "git",
