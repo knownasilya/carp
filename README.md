@@ -25,7 +25,6 @@ The method signature is `carp(coordinates, tolerance)`. Coordinates can be:
 
 ## Roadmap
 
-* tolerance by difference
 * handle `carp(lat, lng, tol)`
 
 [travis-badge-url]: https://travis-ci.org/knownasilya/carp
