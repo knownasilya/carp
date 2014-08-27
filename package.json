@@ -1,6 +1,6 @@
 {
   "name": "carp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "lat/lng to bbox with a tolerance",
   "main": "index.js",
   "scripts": {
