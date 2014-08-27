@@ -1,6 +1,8 @@
 carp [![Build Status: Master][travis-badge]][travis-badge-url]
 ====
 
+[![NPM][npm-badge]][npm-badge-url]
+
 > lat/lng to bbox with a tolerance
 
 ## Install
@@ -29,3 +31,5 @@ The method signature is `carp(coordinates, tolerance)`. Coordinates can be:
 
 [travis-badge-url]: https://travis-ci.org/knownasilya/carp
 [travis-badge]: https://travis-ci.org/knownasilya/carp.svg?branch=master
+[npm-badge]: https://nodei.co/npm/carp.svg
+[npm-badge-url]: https://nodei.co/npm/carp
