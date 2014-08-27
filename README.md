@@ -31,5 +31,5 @@ The method signature is `carp(coordinates, tolerance)`. Coordinates can be:
 
 [travis-badge-url]: https://travis-ci.org/knownasilya/carp
 [travis-badge]: https://travis-ci.org/knownasilya/carp.svg?branch=master
-[npm-badge]: https://nodei.co/npm/carp.svg
+[npm-badge]: https://nodei.co/npm/carp.png
 [npm-badge-url]: https://nodei.co/npm/carp

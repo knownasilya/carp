@@ -3,6 +3,8 @@
 var lats = ['lat', 'latitude'];
 var lngs = ['lng', 'long', 'longitude'];
 
+// 'lat, lng' regexp /(-*\d+(\.\d+)*)+\,\s*(-*\d+(\.\d+)*)+/
+
 module.exports = function(latlng, tolerance) {
   var result;
 
