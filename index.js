@@ -1,7 +1,7 @@
 'use strict';
 
-var lats = ['lat', 'latitude'];
-var lngs = ['lng', 'long', 'longitude'];
+var lats = ['y', 'lat', 'latitude'];
+var lngs = ['x', 'lng', 'long', 'longitude'];
 
 // 'lat, lng' regexp /(-*\d+(\.\d+)*)+\,\s*(-*\d+(\.\d+)*)+/
 

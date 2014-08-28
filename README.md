@@ -25,7 +25,8 @@ carp({ lat: 50.90, lng: 105.51 }, 1); // [50.90, 105.51, 51.90, 106.51]
 The method signature is `carp(coordinates, tolerance)`. Coordinates can be:
 
 * Array - `[lat, lng]`
-* Object - `{ lat: lat, lng: lng}`, or `{ latitude: lat, longitude: lng }`, or a mixed version..
+* Object - `{ lat: lat, lng: lng}`, `{ latitude: lat, longitude: lng }`,
+  `{ x: lng, y: lat }` or a mixed version..
 
 ## Roadmap
 
